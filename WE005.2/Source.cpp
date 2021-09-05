@@ -14,7 +14,9 @@ void main()
     int x;
     printf("Enter your factorial: ");
     scanf_s("%d", &number);
-
+    if (number < 0) {
+        printf("Error!");
+    }
     x = factorial(number);
     printf("Factorial of %d is %d\n", number, x);
 }
